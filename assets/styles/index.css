@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: lightcyan;
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero .slider-container{
+    border: 5px solid lightseagreen;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.hero .slider-container .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease-in-out;
+}
+.hero .slider-container .slide h1{
+    position: absolute;
+    font-size: 128px;
+    color: red;
+    text-shadow: 2px 2px 2px #111;
+    line-height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero .slider-container .slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .hero .slider-container .slide:nth-child(1){
+    left: 0;
+}
+.hero .slider-container .slide:nth-child(2){
+    left: 100%;
+}
+.hero .slider-container .slide:nth-child(3){
+    left: 200%;
+}
+.hero .slider-container .slide:nth-child(4){
+    left: 300%;
+} */
+/* .hero .slider-container .slide{
+    transform: translateX(-100%);
+} */
+
+.btn-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.btn-container button{
+    outline: none;
+    appearance: none;
+    background: none;
+    border: none;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin:  10px;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
